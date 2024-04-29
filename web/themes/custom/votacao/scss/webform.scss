@@ -1,0 +1,27 @@
+/* Estilizando o container do radio button para centralizar verticalmente */
+input[type="radio"] {
+    -webkit-appearance: none; /* Remove os estilos padrão do navegador */
+    -moz-appearance: none;
+    appearance: none;
+    width: 30px; /* Largura desejada para o radio button */
+    height: 30px; /* Altura desejada para o radio button */
+    border: 2px solid #999; /* Estilo da borda */
+    border-radius: 50%; /* Borda circular para radio button */
+    outline: none; /* Remove a borda ao focar */
+    cursor: pointer;
+    vertical-align: middle; /* Alinhamento vertical */
+}
+/* Estilizando o radio button quando estiver marcado (checked) */
+input[type="radio"]:checked {
+    background-color: blue; /* Cor de fundo azul quando marcado */
+    margin-bottom: 20px;
+}
+
+
+/* Estilizando o rótulo (texto) associado ao radio button */
+label {
+    display: inline-flex; /* Permite alinhamento vertical */
+    align-items: center; /* Centraliza verticalmente */
+    cursor: pointer;
+    margin-bottom: 10px; /* Espaçamento opcional abaixo do rótulo */
+}

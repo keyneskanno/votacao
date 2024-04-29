@@ -1,0 +1,24 @@
+uuid: a0e906ae-7d06-4e2d-b027-46f7bfeab457
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.opcoes_da_enquete
+  module:
+    - text
+id: node.opcoes_da_enquete.body
+field_name: body
+entity_type: node
+bundle: opcoes_da_enquete
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+  allowed_formats: {  }
+field_type: text_with_summary

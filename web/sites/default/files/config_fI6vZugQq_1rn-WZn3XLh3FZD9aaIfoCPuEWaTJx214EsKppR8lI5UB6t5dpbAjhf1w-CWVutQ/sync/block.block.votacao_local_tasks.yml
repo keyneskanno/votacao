@@ -1,0 +1,22 @@
+uuid: 32fabb5e-43c2-410e-ad88-24aa1f7a63fb
+langcode: pt-br
+status: true
+dependencies:
+  theme:
+    - votacao
+_core:
+  default_config_hash: y5q_GRxRVnSEzmdHBlUH9UmXRHIy0T6wMFQveg3_yXU
+id: votacao_local_tasks
+theme: votacao
+region: content
+weight: -4
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Abas
+  label_display: '0'
+  provider: core
+  primary: true
+  secondary: true
+visibility: {  }

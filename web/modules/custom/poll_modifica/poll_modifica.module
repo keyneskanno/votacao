@@ -1,0 +1,56 @@
+<?php
+
+  function poll_modifica_form_poll_node_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $form_state, $form_id) {
+    // Personalize o formulário aqui conforme necessário.
+    
+   
+    
+    // Alterar ou personalizar outros elementos do formulário conforme necessário.
+  }
+
+
+
+
+  /**
+ * Implements hook_form_alter().
+ */
+function poll_modifica_form_alter(&$form, &$form_state, $form_id) {
+    // Verifique se o formulário é o formulário de criação de enquete (poll_node_form).
+    
+    
+    if ($form_id == 'poll_edit_form'|| $form_id == 'poll_form') {
+
+      
+
+        /*  
+        // Obtenha o objeto da entidade Poll associado ao formulário.
+        $poll_entity = $form_state->getFormObject()->getEntity();
+
+        // Verifique se o objeto é uma instância de Drupal\poll\Entity\Poll.
+        if ($poll_entity instanceof \Drupal\poll\Entity\Poll) {
+            // Remova o campo 'choice' existente do formulário.
+            unset($form['choice']);
+
+            // Defina opções predefinidas para o novo campo de seleção.
+            $options = [
+                'option_1' => 'Opção 1',
+                'option_2' => 'Opção 2',
+                'option_3' => 'Opção 3',
+                // Adicione quantas opções você precisar.
+            ];
+
+            // Adicione um novo campo de seleção com as opções predefinidas.
+            $form['choice'] = [
+                '#type' => 'select',
+                '#title' => t('Escolha uma opção'),
+                '#options' => $options,
+                '#required' => TRUE, // Defina como TRUE se desejar que uma opção seja selecionada.
+                '#default_value' => isset($poll_entity->choice) ? $poll_entity->choice : NULL,
+                // Adicione outros atributos conforme necessário.
+            ];
+        }  
+        */
+
+        
+    }
+}

@@ -1,0 +1,45 @@
+uuid: 4172cc20-8e27-4e6d-a508-a0b260512251
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.opcoes_da_enquete.body
+    - field.field.node.opcoes_da_enquete.field_descricao
+    - field.field.node.opcoes_da_enquete.field_imagem
+    - field.field.node.opcoes_da_enquete.field_tipo
+    - node.type.opcoes_da_enquete
+  module:
+    - text
+    - user
+id: node.opcoes_da_enquete.teaser
+targetEntityType: node
+bundle: opcoes_da_enquete
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  field_imagem:
+    type: entity_reference_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: true
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_descricao: true
+  field_tipo: true
+  langcode: true

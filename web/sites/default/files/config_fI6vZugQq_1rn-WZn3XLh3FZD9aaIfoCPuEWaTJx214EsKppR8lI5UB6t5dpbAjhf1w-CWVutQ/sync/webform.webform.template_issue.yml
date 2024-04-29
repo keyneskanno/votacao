@@ -1,0 +1,313 @@
+uuid: 3f3d75e8-f036-41cd-aba2-d3ec02b2a3d1
+langcode: pt-br
+status: closed
+dependencies:
+  enforced:
+    module:
+      - webform_templates
+_core:
+  default_config_hash: 228e2URnMk1auIozwnS0kyl8WSXbCLFpTJ0i0YbvRkY
+weight: 0
+open: null
+close: null
+uid: null
+template: true
+archive: false
+id: template_issue
+title: Ocorrência
+description: 'Um modelo de webform para ocorrência.'
+categories: {  }
+elements: |
+  meta_data_details:
+    '#title': 'Informações da ocorrência'
+    '#type': details
+    '#open': true
+    meta_data_01:
+      '#type': webform_flexbox
+      title:
+        '#type': textfield
+        '#title': Título
+        '#required': true
+      project:
+        '#type': select
+        '#title': Projeto
+        '#required': true
+        '#options':
+          'Projeto I': 'Projeto I'
+          'Projeto II': 'Projeto II'
+          'Projeto III': 'Projeto III'
+    meta_data_02:
+      '#type': webform_flexbox
+      category:
+        '#type': select
+        '#title': Categoria
+        '#required': true
+        '#options':
+          'Relatório de Bugs': 'Relatório de Bugs'
+          Task: Task
+          'Solicitação de funcionalidade': 'Solicitação de funcionalidade'
+          'Solicitação de suporte': 'Solicitação de suporte'
+          Plano: Plano
+      priority:
+        '#type': select
+        '#title': Prioridade
+        '#required': true
+        '#options':
+          4: Crítica
+          3: Major
+          2: Normal
+          1: Menor
+      status:
+        '#type': webform_select_other
+        '#title': Situação
+        '#required': true
+        '#options':
+          Active: Ativo
+          'Necessita trabalho': 'Necessita trabalho'
+          'Necessita revisão': 'Necessita revisão'
+          'Revisto e testado pela comunidade': 'Revisto e testado pela comunidade'
+          'Patch (a ser portado)': 'Patch (a ser portado)'
+          Corrigido: Corrigido
+          Adiado: Adiado
+          'Adiado (mantenedor necessita mais informações)': 'Adiado (mantenedor necessita mais informações)'
+          'Fechado (duplicado)': 'Fechado (duplicado)'
+          'Fechado (não corrigir)': 'Fechado (não corrigir)'
+          'Fechado (funciona como especificado)': 'Fechado (funciona como especificado)'
+          'Fechado (não pôde reproduzir)': 'Fechado (não pôde reproduzir)'
+          'Fechado (desatualizado)': 'Fechado (desatualizado)'
+      version:
+        '#type': webform_autocomplete
+        '#title': Versão
+        '#required': true
+        '#autocomplete_existing': true
+      component:
+        '#type': webform_select_other
+        '#title': Component
+        '#required': true
+        '#options':
+          Código: Código
+          Documentação: Documentação
+          Miscelâneo: Miscelâneo
+          'User interface': 'Interface de Usuário'
+      assigned:
+        '#type': entity_autocomplete
+        '#title': Atribuído
+        '#target_type': user
+        '#selection_handler': 'default:user'
+        '#selection_settings':
+          include_anonymous: false
+    meta_data_03:
+      '#type': webform_flexbox
+      tags:
+        '#type': entity_autocomplete
+        '#title': 'Tags de Ocorrências'
+        '#description': '<strong>Não</strong> use para palavras aleatórias ou para duplicar outros campos. Separe termos com vírgula, não espaço.'
+        '#tags': true
+        '#target_type': taxonomy_term
+        '#selection_handler': 'default:taxonomy_term'
+        '#selection_settings':
+          target_bundles:
+            tags: tags
+          auto_create: 1
+          auto_create_bundle: tags
+  summary_and_relationshsips_details:
+    '#title': 'Sumário da ocorrência'
+    '#type': details
+    '#open': true
+    summary:
+      '#type': text_format
+      '#title': Sumário
+      '#description': 'Um sumário de ocorrência é uma visão geral da ocorrência.Deve ser escrito se a ocorrência tem mais de alguns comentários e/ou um desenvolvedor médio não pode entender o assunto após alguns minutos de estudoEstes sumários são fontes inportantes de informações para desenvolvedores revisores e usuários que precisam passar por grandes volumes de ocorrências e informações rapidamente.'
+  files_details:
+    '#title': Arquivos
+    '#type': details
+    '#open': true
+    files:
+      '#type': managed_file
+      '#title': Files
+      '#multiple': true
+css: ''
+javascript: ''
+settings:
+  ajax: false
+  ajax_scroll_top: form
+  ajax_progress_type: ''
+  ajax_effect: ''
+  ajax_speed: null
+  page: true
+  page_submit_path: ''
+  page_confirm_path: ''
+  page_theme_name: ''
+  form_title: source_entity_webform
+  form_submit_once: false
+  form_open_message: ''
+  form_close_message: ''
+  form_exception_message: ''
+  form_previous_submissions: true
+  form_confidential: false
+  form_confidential_message: ''
+  form_disable_remote_addr: false
+  form_convert_anonymous: false
+  form_prepopulate: false
+  form_prepopulate_source_entity: false
+  form_prepopulate_source_entity_required: false
+  form_prepopulate_source_entity_type: ''
+  form_unsaved: false
+  form_disable_back: false
+  form_submit_back: false
+  form_disable_autocomplete: false
+  form_novalidate: false
+  form_disable_inline_errors: false
+  form_required: false
+  form_autofocus: false
+  form_details_toggle: false
+  form_reset: false
+  form_access_denied: default
+  form_access_denied_title: ''
+  form_access_denied_message: ''
+  form_access_denied_attributes: {  }
+  form_file_limit: ''
+  form_attributes: {  }
+  form_method: ''
+  form_action: ''
+  share: false
+  share_node: false
+  share_theme_name: ''
+  share_title: true
+  share_page_body_attributes: {  }
+  submission_label: ''
+  submission_exception_message: ''
+  submission_locked_message: ''
+  submission_log: false
+  submission_excluded_elements: {  }
+  submission_exclude_empty: false
+  submission_exclude_empty_checkbox: false
+  submission_views: {  }
+  submission_views_replace: {  }
+  submission_user_columns: {  }
+  submission_user_duplicate: false
+  submission_access_denied: default
+  submission_access_denied_title: ''
+  submission_access_denied_message: ''
+  submission_access_denied_attributes: {  }
+  previous_submission_message: ''
+  previous_submissions_message: ''
+  autofill: false
+  autofill_message: ''
+  autofill_excluded_elements: {  }
+  wizard_progress_bar: false
+  wizard_progress_pages: false
+  wizard_progress_percentage: false
+  wizard_progress_link: false
+  wizard_progress_states: false
+  wizard_start_label: ''
+  wizard_preview_link: false
+  wizard_confirmation: true
+  wizard_confirmation_label: ''
+  wizard_auto_forward: true
+  wizard_auto_forward_hide_next_button: false
+  wizard_keyboard: true
+  wizard_track: ''
+  wizard_prev_button_label: ''
+  wizard_next_button_label: ''
+  wizard_toggle: false
+  wizard_toggle_show_label: ''
+  wizard_toggle_hide_label: ''
+  wizard_page_type: container
+  wizard_page_title_tag: h2
+  preview: 1
+  preview_label: ''
+  preview_title: ''
+  preview_message: ''
+  preview_attributes: {  }
+  preview_excluded_elements: {  }
+  preview_exclude_empty: true
+  preview_exclude_empty_checkbox: false
+  draft: none
+  draft_multiple: false
+  draft_auto_save: false
+  draft_saved_message: ''
+  draft_loaded_message: ''
+  draft_pending_single_message: ''
+  draft_pending_multiple_message: ''
+  confirmation_type: page
+  confirmation_url: ''
+  confirmation_title: ''
+  confirmation_message: ''
+  confirmation_attributes: {  }
+  confirmation_back: true
+  confirmation_back_label: ''
+  confirmation_back_attributes: {  }
+  confirmation_exclude_query: false
+  confirmation_exclude_token: false
+  confirmation_update: false
+  limit_total: null
+  limit_total_interval: null
+  limit_total_message: ''
+  limit_total_unique: false
+  limit_user: null
+  limit_user_interval: null
+  limit_user_message: ''
+  limit_user_unique: false
+  entity_limit_total: null
+  entity_limit_total_interval: null
+  entity_limit_user: null
+  entity_limit_user_interval: null
+  purge: none
+  purge_days: null
+  results_disabled: false
+  results_disabled_ignore: false
+  results_customize: false
+  token_view: false
+  token_update: false
+  token_delete: false
+  serial_disabled: false
+access:
+  create:
+    roles:
+      - anonymous
+      - authenticated
+    users: {  }
+    permissions: {  }
+  view_any:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  update_any:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  delete_any:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  purge_any:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  view_own:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  update_own:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  delete_own:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  administer:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  test:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  configuration:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+handlers: {  }
+variants: {  }

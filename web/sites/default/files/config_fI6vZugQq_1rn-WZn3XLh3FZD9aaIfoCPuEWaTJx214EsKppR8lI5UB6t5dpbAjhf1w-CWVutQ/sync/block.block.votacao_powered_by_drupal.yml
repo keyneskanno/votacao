@@ -1,0 +1,22 @@
+uuid: 6ed21090-d3c6-4ae7-b3fa-302604d5378a
+langcode: pt-br
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - votacao
+_core:
+  default_config_hash: yHhLX5LI_TPcjDJTTXqMChicHpdgNQbdBJfUlp3tzCk
+id: votacao_powered_by_drupal
+theme: votacao
+region: footer
+weight: 0
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Desenvolvido com Drupal'
+  label_display: '0'
+  provider: system
+visibility: {  }

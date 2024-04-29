@@ -1,0 +1,19 @@
+uuid: 852aa1b6-bcbf-40d2-9872-2a09cf1af871
+langcode: pt-br
+status: true
+dependencies:
+  enforced:
+    module:
+      - webform
+_core:
+  default_config_hash: PEUoedWrfYEX7oZ8CcOukfBTVxar1cPSROX8534esuU
+id: titles
+label: Títulos
+category: Demográfico
+likert: false
+options: |
+  Miss: Miss
+  Ms: Ms
+  Mr: Mr
+  Mrs: Mrs
+  Dr: Dr

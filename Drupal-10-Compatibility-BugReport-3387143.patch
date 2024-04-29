@@ -1,0 +1,34 @@
+diff --git a/composer.json b/composer.json
+index 42b1f00..301e037 100644
+--- a/composer.json
++++ b/composer.json
+@@ -9,8 +9,13 @@
+         "source": "https://git.drupalcode.org/project/votingapi_widgets"
+     },
+     "require": {
+-        "drupal/core": "^8.8.2 || ^9",
+-        "drupal/votingapi": "^3.0"
++        "drupal/core": "^8.8.2 || ^9 || ^10",
++        "drupal/votingapi": "^3.0",
++        "composer/installers": "^1.0.24"
+     },
+-    "minimum-stability": "dev"
++    "extra": {
++        "installer-name": "votingapi_widgets"
++      },
++    "minimum-stability": "dev",
+ }
++
+diff --git a/votingapi_widgets.info.yml b/votingapi_widgets.info.yml
+index 9bf5c10..b06c116 100644
+--- a/votingapi_widgets.info.yml
++++ b/votingapi_widgets.info.yml
+@@ -2,7 +2,7 @@ name: Votingapi Widgets
+ type: module
+ description: 'Voting API Widgets.'
+ package: Voting
+-core_version_requirement: ^8.8.2 || ^9
++core_version_requirement: ^8.8.2 || ^9 || ^10
+ 
+ dependencies:
+   - votingapi:votingapi

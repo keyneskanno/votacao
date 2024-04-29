@@ -1,0 +1,22 @@
+uuid: 500fab3e-3289-401e-a24c-966159dd7f0a
+langcode: pt-br
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - votacao
+_core:
+  default_config_hash: 9Coh2hpY02ZyZChhJnOQuiWRMRnUmokLS1NGoFtGCrM
+id: votacao_content
+theme: votacao
+region: content
+weight: -1
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Conteúdo da página principal'
+  label_display: '0'
+  provider: system
+visibility: {  }

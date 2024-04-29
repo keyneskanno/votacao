@@ -1,0 +1,24 @@
+uuid: 94343ce0-0d7e-40ab-9eeb-88a57e35b801
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_descricao
+    - filter.format.full_html
+    - node.type.opcoes_da_enquete
+  module:
+    - text
+id: node.opcoes_da_enquete.field_descricao
+field_name: field_descricao
+entity_type: node
+bundle: opcoes_da_enquete
+label: Descrição
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats:
+    - full_html
+field_type: text_long

@@ -1,0 +1,45 @@
+{# Loop através das opções de votação #}
+
+<h2>{{ title }}</h2>
+
+
+<form method="post" action="{{ form['#action'] }}" {{ form['#attributes'] }}>
+    
+    <h2>{{ question }}</h2>
+    {% if form['choice'] is defined and form['choice']['#options'] is defined %}
+        {% set options = form['choice']['#options'] %}
+        
+        {# Iterar sobre as opções de escolha #}
+        {% for key, option in options %}
+            <div class=>
+                <label> 
+                    <input type="radio" name="choice" value="{{ key }}" /> {{ option }}
+                </label>
+            </div>
+        {% endfor %}
+        <br><br>
+    {% endif %}
+
+    {{dump(form['#entity'].field_imagem)}}
+
+    {% set media_entity = drupal.service('media').load(2) %}
+    {% if media_entity %}
+    {% set image_url = file_url(media_entity.field_media_image.entity.uri.value) %}
+    <img src="{{ image_url }}" alt="{{ media_entity.field_media_image.alt }}" />
+    {% endif %}
+
+
+
+
+
+
+    <input type="submit" value="Votar" style="background-color: #007bff;color: #fff; font-size: 18px; /* Tamanho da fonte */
+    padding: 12px 20px;
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; /" />
+       {{ form_build_id }}
+    {{ form_token }}
+    {{ form_id }}
+ 
+</form>

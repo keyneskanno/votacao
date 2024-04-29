@@ -1,0 +1,14 @@
+_core:
+  default_config_hash: VDJxTZtQR21qB4lvOq8zszJZLvLKrSPQpdn2E3T71Ww
+langcode: pt-br
+uuid: 8b8be368-f6c2-4900-9028-6ed9192a547c
+name: Votação
+mail: votacao@teste.com.br
+slogan: ''
+page:
+  403: ''
+  404: ''
+  front: /node
+admin_compact_mode: false
+weight_select_max: 100
+default_langcode: pt-br

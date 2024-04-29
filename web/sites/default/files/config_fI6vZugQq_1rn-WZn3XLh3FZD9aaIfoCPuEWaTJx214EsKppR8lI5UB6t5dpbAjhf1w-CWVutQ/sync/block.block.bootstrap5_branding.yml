@@ -1,0 +1,25 @@
+uuid: 26994b58-1218-43b1-a3ef-3abdf74e1fd2
+langcode: pt-br
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - bootstrap5
+_core:
+  default_config_hash: nuW1Z5MdvzbCCEZ9RQojaEWB6Zni32zTq-v5OWbS2sc
+id: bootstrap5_branding
+theme: bootstrap5
+region: nav_branding
+weight: -6
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Definição de marca do site'
+  label_display: '0'
+  provider: system
+  use_site_logo: true
+  use_site_name: true
+  use_site_slogan: false
+visibility: {  }

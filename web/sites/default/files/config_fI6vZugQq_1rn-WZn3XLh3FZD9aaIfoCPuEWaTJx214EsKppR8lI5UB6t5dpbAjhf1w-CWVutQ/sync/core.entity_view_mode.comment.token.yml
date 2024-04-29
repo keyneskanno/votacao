@@ -1,0 +1,11 @@
+uuid: f459a17c-75a2-4109-a930-2ae3c884fd28
+langcode: pt-br
+status: true
+dependencies:
+  module:
+    - comment
+id: comment.token
+label: Token
+description: ''
+targetEntityType: comment
+cache: true

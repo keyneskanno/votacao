@@ -1,0 +1,20 @@
+uuid: 3d61feeb-211f-45f5-bf2c-1d467e1fb5a5
+langcode: pt-br
+status: true
+dependencies:
+  theme:
+    - votacao
+_core:
+  default_config_hash: 8DChZgc6Xp0yPJPJbuJDeeRNfPw0vS4kHvXKJg5xxqs
+id: votacao_page_title
+theme: votacao
+region: content
+weight: -6
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Título da página'
+  label_display: '0'
+  provider: core
+visibility: {  }

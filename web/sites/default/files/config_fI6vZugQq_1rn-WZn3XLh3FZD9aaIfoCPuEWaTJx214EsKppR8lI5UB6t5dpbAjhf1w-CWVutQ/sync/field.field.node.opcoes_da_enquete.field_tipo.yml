@@ -1,0 +1,29 @@
+uuid: 9a7393fe-188e-4db3-92b3-a90a84fc3068
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_tipo
+    - node.type.opcoes_da_enquete
+    - taxonomy.vocabulary.tags
+id: node.opcoes_da_enquete.field_tipo
+field_name: field_tipo
+entity_type: node
+bundle: opcoes_da_enquete
+label: Tipo
+description: 'Informe para qual enquete este termo será exibido'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      tags: tags
+    sort:
+      field: name
+      direction: asc
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

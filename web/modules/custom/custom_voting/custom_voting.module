@@ -1,0 +1,24 @@
+<?php
+
+use Drupal\Core\Routing\RouteMatchInterface;
+use Drupal\votingapi\Entity\Vote;
+
+/**
+ * Implements hook_form_alter().
+ */
+function custom_voting_form_alter(&$form, &$form_state, $form_id) {
+  // Verifica se é o formulário de votação.
+  if (strpos($form_id, 'vote') !== false) {
+    // Adiciona um widget personalizado para as opções de imagem.
+    $form['choices']['widget'][0] = [
+      '#type' => 'image_button',
+      '#name' => 'choice',
+      '#title' => $form['choices']['widget'][0]['#title'],
+      '#value' => $form['choices']['widget'][0]['#value'],
+      '#return_value' => $form['choices']['widget'][0]['#return_value'],
+      '#attributes' => [
+        'src' => 'path/to/your/image.jpg', // Substitua pelo caminho da imagem desejada.
+      ],
+    ];
+  }
+}

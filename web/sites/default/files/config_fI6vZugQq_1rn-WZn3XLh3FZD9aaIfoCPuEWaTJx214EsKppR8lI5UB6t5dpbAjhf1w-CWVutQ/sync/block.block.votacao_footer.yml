@@ -1,0 +1,27 @@
+uuid: 6c5d4233-57af-488e-a2d1-fff50548801d
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - system.menu.footer
+  module:
+    - system
+  theme:
+    - votacao
+_core:
+  default_config_hash: cjlOyARAHWcvkmjgoWPFPMwzk43Kpgmm9kQUJ8l4OXM
+id: votacao_footer
+theme: votacao
+region: footer
+weight: -6
+provider: null
+plugin: 'system_menu_block:footer'
+settings:
+  id: 'system_menu_block:footer'
+  label: Rodapé
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

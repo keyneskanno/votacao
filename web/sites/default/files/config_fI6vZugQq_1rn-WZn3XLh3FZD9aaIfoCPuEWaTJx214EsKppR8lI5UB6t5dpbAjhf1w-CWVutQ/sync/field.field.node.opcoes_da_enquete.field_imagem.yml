@@ -1,0 +1,29 @@
+uuid: f313080f-b292-4e44-af36-0b1393455f25
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_imagem
+    - media.type.image
+    - node.type.opcoes_da_enquete
+id: node.opcoes_da_enquete.field_imagem
+field_name: field_imagem
+entity_type: node
+bundle: opcoes_da_enquete
+label: Imagem
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

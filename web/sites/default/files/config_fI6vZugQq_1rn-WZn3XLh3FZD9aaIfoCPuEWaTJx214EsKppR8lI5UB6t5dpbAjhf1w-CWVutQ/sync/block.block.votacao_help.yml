@@ -1,0 +1,22 @@
+uuid: 530e477d-494a-49dc-acad-d0e0469397d2
+langcode: pt-br
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - votacao
+_core:
+  default_config_hash: i_pD8OVsJA2VwsqtDh7t2DKWx0lJtjtFcBQewa4WOZk
+id: votacao_help
+theme: votacao
+region: content
+weight: -3
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Ajuda
+  label_display: '0'
+  provider: help
+visibility: {  }

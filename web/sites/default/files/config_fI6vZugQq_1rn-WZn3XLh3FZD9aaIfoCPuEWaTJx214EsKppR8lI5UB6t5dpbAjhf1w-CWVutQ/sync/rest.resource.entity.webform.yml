@@ -1,0 +1,18 @@
+uuid: ad3803a9-622f-4b6d-ae7d-bbe99671f00d
+langcode: pt-br
+status: true
+dependencies:
+  module:
+    - basic_auth
+    - serialization
+    - webform
+id: entity.webform
+plugin_id: 'entity:webform'
+granularity: resource
+configuration:
+  methods:
+    - GET
+  formats:
+    - json
+  authentication:
+    - basic_auth

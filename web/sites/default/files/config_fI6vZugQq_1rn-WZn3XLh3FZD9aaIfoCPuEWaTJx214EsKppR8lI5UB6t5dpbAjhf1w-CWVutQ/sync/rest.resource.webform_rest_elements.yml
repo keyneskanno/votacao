@@ -1,0 +1,18 @@
+uuid: 60fadc0f-bba2-4ec8-9e14-a98515104505
+langcode: pt-br
+status: true
+dependencies:
+  module:
+    - basic_auth
+    - serialization
+    - webform_rest
+id: webform_rest_elements
+plugin_id: webform_rest_elements
+granularity: resource
+configuration:
+  methods:
+    - GET
+  formats:
+    - json
+  authentication:
+    - basic_auth

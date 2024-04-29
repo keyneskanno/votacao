@@ -1,0 +1,22 @@
+uuid: 26853920-e17d-4d7b-8d75-b8df80530104
+langcode: pt-br
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - votacao
+_core:
+  default_config_hash: rd94s_AnhjSgZN0t4_WLtFglV9j7OIPivhttUvfFurc
+id: votacao_messages
+theme: votacao
+region: content
+weight: -7
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: Mensagens
+  label_display: '0'
+  provider: system
+visibility: {  }

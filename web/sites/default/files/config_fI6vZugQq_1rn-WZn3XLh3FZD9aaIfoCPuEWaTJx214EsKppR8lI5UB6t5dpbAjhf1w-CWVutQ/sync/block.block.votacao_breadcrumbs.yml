@@ -1,0 +1,22 @@
+uuid: 90739f45-3b85-40b2-b2d3-0f8248ef5f89
+langcode: pt-br
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - votacao
+_core:
+  default_config_hash: 0G1M4Txkr_E8OzCDisnguQ4UE5b3IWUREGT29oyNdRc
+id: votacao_breadcrumbs
+theme: votacao
+region: breadcrumb
+weight: 0
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  label_display: '0'
+  provider: system
+visibility: {  }

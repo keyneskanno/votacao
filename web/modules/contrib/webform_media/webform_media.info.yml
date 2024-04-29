@@ -1,0 +1,13 @@
+name: Webform media
+description: 'Provides media source for webforms to allow embedding in pages'
+core_version_requirement: ^8.8 || ~9.0 || ^10
+type: module
+dependencies:
+  - drupal:media
+  - drupal:media_library
+  - webform:webform
+
+# Information added by Drupal.org packaging script on 2023-07-21
+version: '1.0.0-beta2'
+project: 'webform_media'
+datestamp: 1689897869

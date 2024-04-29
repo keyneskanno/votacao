@@ -1,0 +1,11 @@
+uuid: a7e2e27a-de25-4baf-bcbb-9f35cd85ccb1
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - node.type.opcoes_da_enquete
+id: node.opcoes_da_enquete
+target_entity_type_id: node
+target_bundle: opcoes_da_enquete
+default_langcode: site_default
+language_alterable: false
