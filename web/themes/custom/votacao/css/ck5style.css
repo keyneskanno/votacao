@@ -11840,7 +11840,7 @@ a > .ck-content code {
 .ck-content code {
   overflow-y: auto;
 }
-.ck-content input[type=radio] {
+.ck-content input[type=radio], .ck-content input[type=checkbox] {
   -webkit-appearance: none; /* Remove os estilos padrão do navegador */
   -moz-appearance: none;
   appearance: none;
@@ -11851,16 +11851,22 @@ a > .ck-content code {
   outline: none; /* Remove a borda ao focar */
   cursor: pointer;
   vertical-align: middle; /* Alinhamento vertical */
+  margin-bottom: 20px;
+  margin-top: 20px;
 }
-.ck-content input[type=radio]:checked {
+.ck-content input[type=radio]:checked, .ck-content input[type=checkbox]:checked {
   background-color: blue; /* Cor de fundo azul quando marcado */
   margin-bottom: 20px;
+  margin-top: 20px;
 }
 .ck-content label {
   display: inline-flex; /* Permite alinhamento vertical */
   align-items: center; /* Centraliza verticalmente */
   cursor: pointer;
   margin-bottom: 10px; /* Espaçamento opcional abaixo do rótulo */
+}
+.ck-content .fieldset-legend {
+  font-size: 30px;
 }
 
 /*# sourceMappingURL=ck5style.css.map */

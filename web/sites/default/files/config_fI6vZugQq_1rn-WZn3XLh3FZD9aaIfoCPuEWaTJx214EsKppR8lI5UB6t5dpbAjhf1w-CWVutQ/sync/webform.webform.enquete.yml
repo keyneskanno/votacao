@@ -9,8 +9,6 @@ third_party_settings:
     chart_type: PieChart
     components:
       - qual_a_sua_cerveja_favorita
-      - qual_o_melhor_time_do_brasil
-      - qual_destes_voce_conseguiria_viver_sem
 weight: 0
 open: null
 close: null

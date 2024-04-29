@@ -1,5 +1,5 @@
 /* Estilizando o container do radio button para centralizar verticalmente */
-input[type="radio"] {
+input[type="radio"], input[type="checkbox"] {
     -webkit-appearance: none; /* Remove os estilos padrão do navegador */
     -moz-appearance: none;
     appearance: none;
@@ -10,11 +10,15 @@ input[type="radio"] {
     outline: none; /* Remove a borda ao focar */
     cursor: pointer;
     vertical-align: middle; /* Alinhamento vertical */
+    margin-bottom: 20px;
+    margin-top: 20px;
 }
 /* Estilizando o radio button quando estiver marcado (checked) */
-input[type="radio"]:checked {
+input[type="radio"]:checked , input[type="checkbox"]:checked{
     background-color: blue; /* Cor de fundo azul quando marcado */
     margin-bottom: 20px;
+    margin-top: 20px;
+
 }
 
 
@@ -24,4 +28,9 @@ label {
     align-items: center; /* Centraliza verticalmente */
     cursor: pointer;
     margin-bottom: 10px; /* Espaçamento opcional abaixo do rótulo */
+}
+
+.fieldset-legend {
+    font-size: 30px;
+
 }
