@@ -1,5 +1,0 @@
-name: 'poll_modifica'
-type: module
-description: 'modifica o modulo poll'
-package: Custom
-core_version_requirement: ^10 || ^11

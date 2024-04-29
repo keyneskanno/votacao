@@ -18,7 +18,7 @@ uid: 1
 template: false
 archive: false
 id: enquete
-title: Enquete
+title: 'Enquete - Cerveja'
 description: ''
 categories: {  }
 elements: |-
@@ -34,28 +34,6 @@ elements: |-
         display_name: opcao_enquete
         arguments:
           - melhorcerveja
-  qual_o_melhor_time_do_brasil:
-    '#type': webform_entity_radios
-    '#title': 'Qual o melhor time do Brasil?'
-    '#target_type': node
-    '#selection_handler': views
-    '#selection_settings':
-      view:
-        view_name: teste
-        display_name: opcao_enquete
-        arguments:
-          - melhortime
-  qual_destes_voce_conseguiria_viver_sem:
-    '#type': webform_entity_checkboxes
-    '#title': 'Qual destes você conseguiria viver sem?'
-    '#target_type': node
-    '#selection_handler': views
-    '#selection_settings':
-      view:
-        view_name: teste
-        display_name: opcao_enquete
-        arguments:
-          - melhorcomida
 css: ''
 javascript: ''
 settings:
@@ -196,7 +174,8 @@ access:
   create:
     roles:
       - anonymous
-      - authenticated
+      - administrator
+      - cliente
     users: {  }
     permissions: {  }
   view_any:

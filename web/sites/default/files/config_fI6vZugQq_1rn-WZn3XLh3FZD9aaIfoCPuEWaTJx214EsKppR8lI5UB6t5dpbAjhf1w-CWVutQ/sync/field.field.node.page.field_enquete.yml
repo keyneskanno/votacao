@@ -1,0 +1,23 @@
+uuid: 23e85fd4-7f03-4155-b088-3daee7ea3fa9
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_enquete
+    - node.type.page
+id: node.page.field_enquete
+field_name: field_enquete
+entity_type: node
+bundle: page
+label: Enquete
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:webform'
+  handler_settings:
+    target_bundles: null
+    auto_create: false
+field_type: entity_reference

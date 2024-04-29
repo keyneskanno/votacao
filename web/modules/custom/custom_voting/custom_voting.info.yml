@@ -1,7 +1,0 @@
-name: 'Custom Voting'
-type: module
-description: 'Custom module for voting with image options.'
-core_version_requirement: ^8 || ^9 || ^10
-package: 'Custom'
-dependencies:
-  - drupal:votingapi

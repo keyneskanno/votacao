@@ -1,11 +1,11 @@
 <?php return array(
     'root' => array(
-        'pretty_version' => '1.0.0+no-version-set',
-        'version' => '1.0.0.0',
+        'pretty_version' => 'dev-main',
+        'version' => 'dev-main',
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
-        'reference' => NULL,
+        'reference' => 'c2cb0c53ebec4e9f20b256b365fb97a886e3e133',
         'name' => 'drupal/recommended-project',
         'dev' => true,
     ),
@@ -206,6 +206,15 @@
             'install_path' => __DIR__ . '/../../web/themes/contrib/bootstrap5',
             'aliases' => array(),
             'reference' => '3.0.11',
+            'dev_requirement' => false,
+        ),
+        'drupal/config_views' => array(
+            'pretty_version' => '2.1.1',
+            'version' => '2.1.1.0',
+            'type' => 'drupal-module',
+            'install_path' => __DIR__ . '/../../web/modules/contrib/config_views',
+            'aliases' => array(),
+            'reference' => '2.1.1',
             'dev_requirement' => false,
         ),
         'drupal/core' => array(
@@ -479,12 +488,12 @@
             'dev_requirement' => false,
         ),
         'drupal/recommended-project' => array(
-            'pretty_version' => '1.0.0+no-version-set',
-            'version' => '1.0.0.0',
+            'pretty_version' => 'dev-main',
+            'version' => 'dev-main',
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
-            'reference' => NULL,
+            'reference' => 'c2cb0c53ebec4e9f20b256b365fb97a886e3e133',
             'dev_requirement' => false,
         ),
         'drupal/restui' => array(

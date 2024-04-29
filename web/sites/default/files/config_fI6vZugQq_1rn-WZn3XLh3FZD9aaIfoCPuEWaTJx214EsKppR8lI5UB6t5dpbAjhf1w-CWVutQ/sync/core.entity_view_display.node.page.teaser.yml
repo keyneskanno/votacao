@@ -5,6 +5,7 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.page.body
+    - field.field.node.page.field_enquete
     - field.field.node.page.field_imagem
     - node.type.page
   module:
@@ -71,4 +72,5 @@ content:
     third_party_settings: {  }
     weight: 4
     region: content
-hidden: {  }
+hidden:
+  field_enquete: true

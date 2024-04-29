@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.node.page.body
+    - field.field.node.page.field_enquete
     - field.field.node.page.field_imagem
     - node.type.page
   module:
@@ -21,10 +22,10 @@ third_party_settings:
         label: ''
     regions:
       content:
-        - langcode
         - field_imagem
         - body
         - links
+        - field_enquete
 _core:
   default_config_hash: M_Y8L5tfmhx7DR143E05YyZSpvgil6VFvqcfBWykalg
 id: node.page.default
@@ -38,6 +39,14 @@ content:
     settings: {  }
     third_party_settings: {  }
     weight: 1
+    region: content
+  field_enquete:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 3
     region: content
   field_imagem:
     type: entity_reference_entity_view
@@ -55,18 +64,10 @@ content:
             classes: {  }
     weight: 0
     region: content
-  langcode:
-    type: language
-    label: above
-    settings:
-      link_to_entity: false
-      native_language: false
-    third_party_settings: {  }
-    weight: 0
-    region: content
   links:
     settings: {  }
     third_party_settings: {  }
     weight: 2
     region: content
-hidden: {  }
+hidden:
+  langcode: true
