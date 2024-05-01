@@ -12,4 +12,14 @@ use votacao;
 source banco.sql;
 ```
 
+Na raiz do drupal execute os comandos:
+```
+composer i
+drush cr
+drush cim
+drush cr
+```
+
+Acesse o /apresentacao para entender o funcionamento de cadastro e visualizar exemplos de enquetes.
+
 
